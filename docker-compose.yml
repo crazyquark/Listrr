@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+    listrr:
+        build:
+            context: .
+            dockerfile: Dockerfile.debian-arm32v7
+        image: crazyquark/listrr:armv7
+        container_name: listrr
+        ports:
+            - 7000:80
+        
